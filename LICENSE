@@ -19,3 +19,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+DISCLAIMER: EDUCATIONAL USE ONLY
+
+This software is intentionally vulnerable and designed exclusively for:
+- Security research and education
+- Penetration testing training
+- Authorized security assessments
+- Controlled laboratory environments
+
+By using this software, you agree to:
+1. Use it only in authorized, controlled environments
+2. Not deploy it on public networks or production systems
+3. Take full responsibility for any misuse or damage
+4. Comply with all applicable laws and regulations
+
+The authors and contributors assume no liability for misuse, damages, or
+security incidents resulting from the use of this intentionally vulnerable
+software.
