@@ -746,6 +746,7 @@
             <button class="header-btn">
               <span class="online-count" id="user-count">0</span> online
             </button>
+            <button class="header-btn" onclick="logout()">🚪 Logout</button>
           </div>
         </header>
 
@@ -865,6 +866,22 @@
         isLoggedIn = true;
 
         showChatApp();
+      }
+
+      function logout() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+          ws.close();
+        }
+
+        localStorage.removeItem("username");
+        localStorage.removeItem("isLoggedIn");
+        isLoggedIn = false;
+
+        document.getElementById("messages").innerHTML = "";
+        channelMessages = {};
+        renderedMessageIds.clear();
+
+        showLoginScreen();
       }
 
       function showLoginScreen() {
