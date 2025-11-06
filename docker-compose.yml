@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vulnsock:
+    build: .
+    container_name: vulnsock
+    ports:
+      - "8080:8080"
+    volumes:
+      - vulnsock-data:/root/data
+    restart: unless-stopped
+    environment:
+      - HOSTNAME=vulnsock-server
+
+volumes:
+  vulnsock-data:
